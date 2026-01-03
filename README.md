@@ -16,6 +16,7 @@ This documentation focuses on **architecture, data boundaries, workflows, constr
   
 ### Architecture
 - [Platform Context Diagram](architecture/platform-context.png)
+- [End-to-End Compliance Workflow](architecture/ll88-end-to-end-flow.png)
   
 ### Data
 - [Shared vs Owned Data Model](data/shared-vs-owned.md)
@@ -74,6 +75,12 @@ This approach preserves a **single source of truth** while allowing compliance l
 ![Platform Context](architecture/platform-context.png)
 
 ---
+
+## End-to-End Compliance Workflow
+![End-to-End Compliance Workflow](architecture/ll88-end-to-end-flow.png)
+
+---
+
 
 ## Subsystem Boundary
 
