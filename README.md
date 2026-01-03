@@ -11,6 +11,12 @@ This documentation focuses on **architecture, data boundaries, workflows, constr
 
 ---
 
+
+## Documentation
+- [Shared vs Owned Data Model](data/shared-vs-owned.md)
+
+---
+
 ## Problem Statement
 
 NYC Local Law 88 requires building owners to:
