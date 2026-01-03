@@ -17,6 +17,7 @@ This documentation focuses on **architecture, data boundaries, workflows, constr
 - [Tables in Scope](data/tables-in-scope.md)
 - [Survey Intake Workflow](workflows/intake.md)
 - [Compliance Evaluation Workflow](workflows/evaluation.md)
+- [Compliance Reporting Workflow](workflows/reporting.md)
 
 ---
 
