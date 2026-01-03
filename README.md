@@ -1,16 +1,17 @@
 # LL88 Compliance Subsystem  
 *Bounded Compliance Module within an Operations Platform*
 
-## Overview
+## System Overview
 
-This repository documents the **LL88 (NYC Local Law 88) compliance subsystem** implemented within a broader internal operations platform used to manage properties, projects, invoicing, purchasing, and regulatory workflows.
+This repository documents the **LL88 (NYC Local Law 88) compliance subsystem** implemented within a broader internal operations platform responsible for managing properties, projects, invoicing, purchasing, and regulatory workflows.
 
-Rather than existing as a standalone database, LL88 compliance logic operates as a **bounded subsystem** that owns compliance-specific workflows while sharing canonical business entities (e.g., Properties, Projects, Invoices) with the core platform.
+Rather than existing as a standalone application or database, LL88 compliance is treated as a **bounded subsystem**: it owns compliance-specific logic, workflows, and artifacts while **sharing canonical business entities** (e.g., Properties, Projects, Invoices) with the core platform.
 
-This documentation focuses on **architecture, data boundaries, workflows, constraints, and design decisions** — not on platform-specific implementation details.
+This documentation focuses on **architecture, data ownership boundaries, workflows, constraints, and key design decisions**, intentionally avoiding platform-specific or implementation-level details.
+
+**Audience:** This material is intended for architects, senior engineers, and technical stakeholders reviewing system design, boundaries, and tradeoffs.
 
 ---
-
 
 ## Documentation
   
@@ -28,7 +29,6 @@ This documentation focuses on **architecture, data boundaries, workflows, constr
 - [Compliance Evaluation Workflow](workflows/evaluation.md)
 - [Compliance Reporting Workflow](workflows/reporting.md)
 - [Remediation Handoff Workflow](workflows/remediation-handoff.md)
-
 
 ---
 
