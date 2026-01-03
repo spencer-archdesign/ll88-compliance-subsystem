@@ -17,6 +17,7 @@ This documentation focuses on **architecture, data boundaries, workflows, constr
 ### Architecture
 - [Platform Context Diagram](architecture/platform-context.png)
 - [End-to-End Compliance Workflow](architecture/ll88-end-to-end-flow.png)
+- [ADR-001: LL88 as a Bounded Subsystem](architecture/adr-001-ll88-bounded-subsystem.md)
   
 ### Data
 - [Shared vs Owned Data Model](data/shared-vs-owned.md)
