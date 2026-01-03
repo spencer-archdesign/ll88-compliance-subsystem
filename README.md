@@ -13,6 +13,10 @@ This documentation focuses on **architecture, data boundaries, workflows, constr
 
 
 ## Documentation
+  
+### Architecture
+- [Platform Context Diagram](architecture/platform-context.png)
+  
 ### Data
 - [Shared vs Owned Data Model](data/shared-vs-owned.md)
 - [Tables in Scope](data/tables-in-scope.md)
@@ -22,9 +26,7 @@ This documentation focuses on **architecture, data boundaries, workflows, constr
 - [Compliance Evaluation Workflow](workflows/evaluation.md)
 - [Compliance Reporting Workflow](workflows/reporting.md)
 - [Remediation Handoff Workflow](workflows/remediation-handoff.md)
-  
-### Architecture
-- [Platform Context Diagram](architecture/platform-context.png)
+
 
 ---
 
@@ -65,6 +67,11 @@ The LL88 subsystem operates within a **modular monolith** architecture:
   - Regulatory documentation outputs
 
 This approach preserves a **single source of truth** while allowing compliance logic to evolve independently.
+
+---
+
+## Architecture Overview
+![Platform Context](architecture/platform-context.png)
 
 ---
 
