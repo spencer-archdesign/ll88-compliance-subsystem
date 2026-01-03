@@ -13,12 +13,18 @@ This documentation focuses on **architecture, data boundaries, workflows, constr
 
 
 ## Documentation
+### Data
 - [Shared vs Owned Data Model](data/shared-vs-owned.md)
 - [Tables in Scope](data/tables-in-scope.md)
+  
+### Workflows
 - [Survey Intake Workflow](workflows/intake.md)
 - [Compliance Evaluation Workflow](workflows/evaluation.md)
 - [Compliance Reporting Workflow](workflows/reporting.md)
 - [Remediation Handoff Workflow](workflows/remediation-handoff.md)
+  
+### Architecture
+- [Platform Context Diagram](architecture/platform-context.png)
 
 ---
 
