@@ -16,6 +16,7 @@ This documentation focuses on **architecture, data boundaries, workflows, constr
 - [Shared vs Owned Data Model](data/shared-vs-owned.md)
 - [Tables in Scope](data/tables-in-scope.md)
 - [Survey Intake Workflow](workflows/intake.md)
+- [Compliance Evaluation Workflow](workflows/evaluation.md)
 
 ---
 
