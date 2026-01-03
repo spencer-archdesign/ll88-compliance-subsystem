@@ -14,6 +14,7 @@ This documentation focuses on **architecture, data boundaries, workflows, constr
 
 ## Documentation
 - [Shared vs Owned Data Model](data/shared-vs-owned.md)
+- [Tables in Scope](data/tables-in-scope.md)
 
 ---
 
