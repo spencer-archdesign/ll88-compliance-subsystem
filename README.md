@@ -3,14 +3,15 @@
 
 ## System Overview
 
-This repository documents the **LL88 (NYC Local Law 88) compliance subsystem** implemented within a broader internal operations platform responsible for managing properties, projects, invoicing, purchasing, and regulatory workflows.
+Local Law 88 (LL88) imposes lighting efficiency and control requirements across large building portfolios in New York City, with strict deadlines, audit exposure, and evolving interpretations that often require iterative review and human judgment.
 
-Rather than existing as a standalone application or database, LL88 compliance is treated as a **bounded subsystem**: it owns compliance-specific logic, workflows, and artifacts while **sharing canonical business entities** (e.g., Properties, Projects, Invoices) with the core platform.
+This repository documents the **LL88 compliance subsystem** implemented within a broader internal operations platform already responsible for managing properties, projects, invoicing, purchasing, and related regulatory workflows. Introducing LL88 compliance into this environment required supporting high-volume survey intake, defensible compliance evaluation, and repeatable reporting **without fragmenting data ownership or duplicating core business entities**.
+
+Rather than existing as a standalone application or database, LL88 compliance is treated as a **bounded subsystem**: it owns compliance-specific logic, workflows, and artifacts while sharing canonical entities (e.g., Properties, Projects, Invoices) with the core platform. This approach allows compliance logic to evolve independently while preserving a single source of truth for operational data.
 
 This documentation focuses on **architecture, data ownership boundaries, workflows, constraints, and key design decisions**, intentionally avoiding platform-specific or implementation-level details.
 
-**Audience:** This material is intended for architects, senior engineers, and technical stakeholders reviewing system design, boundaries, and tradeoffs.
-
+**Audience:** Architects, senior engineers, and technical stakeholders reviewing system design, boundaries, and tradeoffs.
 ---
 
 ## Documentation
@@ -163,12 +164,24 @@ This approach preserves a **single source of truth** while allowing compliance l
 
 ## Outcomes
 
+### Architectural Outcomes
 - Reduced manual compliance processing time
 - Improved auditability and traceability
 - Enabled multi-building compliance management
 - Minimized data duplication across operations and compliance
 
-(Quantitative metrics intentionally omitted / anonymized.)
+*(Quantitative metrics intentionally omitted / anonymized.)*
+
+### Operational Impact
+This subsystem has been used in production to support LL88 compliance activities for more than **400 buildings** over the past year.
+
+The architecture enabled the organization to:
+- Perform high-volume survey intake across diverse building types
+- Iteratively evaluate compliance under evolving interpretations and edge cases
+- Generate defensible, auditable compliance reports at scale
+- Cleanly hand off non-compliant findings into remediation and incentive workflows
+
+By embedding LL88 compliance as a bounded subsystem within the existing operations platform, the organization was able to introduce LL88 as a new operational and revenue-generating capability without duplicating core data, fragmenting ownership, or destabilizing existing workflows.
 
 ---
 
@@ -180,7 +193,7 @@ This approach preserves a **single source of truth** while allowing compliance l
 
 ---
 
-## What I’d Do Differently Today
+## What I’d Refine Earlier
 
 - Earlier formalization of subsystem boundaries
 - Clearer contracts around shared entities
@@ -193,7 +206,8 @@ These lessons directly informed later architectural decisions.
 
 ## Related Work
 
-- Mobile survey architecture (in progress)
+This subsystem exists within a broader platform ecosystem, including:
+- Mobile survey architecture (documented separately)
 - Incentive and rebate workflow automation
 - Controls and lighting system design subsystems
 
@@ -202,5 +216,3 @@ These lessons directly informed later architectural decisions.
 ## Author Notes
 
 This repository is intended to demonstrate **systems thinking, architectural decision-making, and real-world constraint handling**, rather than platform-specific implementation details.
-
-Questions and discussion welcome.
